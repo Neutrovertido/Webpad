@@ -1,0 +1,126 @@
+:root {
+    --colorA: #000000;
+    --colorB: #ffffff;
+
+    --lc1: #DEFFF3;
+    --lc2: #59907d;
+    --lc3: #A0DEA4;
+    --lc4: #8FBDAE;
+    --lc5: #4F7765;
+    
+    --dc1: #300950;
+    --dc2: #5d1d92;
+    --dc3: #9f44eb;
+    --dc4: #8c00ff;
+    --dc5: #ab44ff;
+}
+
+.light {
+    --bg: var(--lc1);
+    --text: var(--colorA);
+    --cd: var(--lc5);
+    --title: var(--colorB);
+    --nav: var(--lc4);
+    --hov: var(--lc2);
+}
+
+.dark {
+    --bg: var(--dc1);
+    --text: var(--colorB);
+    --cd: var(--dc5);
+    --title: var(--colorA);
+    --nav: var(--dc4);
+    --hov: var(--dc2);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.card {
+    background: var(--cd);
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 250%;
+    color: var(--title);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background: var(--nav);
+    height: 100%;
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+.navitem {
+    transition: 250ms ease-in-out;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navitem:hover {
+    background-color: var(--hov);
+    transition: 250ms ease-in-out;
+}
+
+.navitem a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 100%;
+}
+
+.box textarea{
+    resize: none;
+    flex: 1;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
