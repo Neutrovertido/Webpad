@@ -1,0 +1,46 @@
+:root {
+    --colorA: #000000;
+    --colorB: #ffffff;
+
+    --lc1: #DEFFF3;
+    --lc2: #B9FCC4;
+    --lc3: #A0DEA4;
+    --lc4: #8FBDAE;
+    --lc5: #4F7765;
+    
+    --dc1: #1E4131;
+    --dc2: #578072;
+    --dc3: #669D69;
+    --dc4: #7CB886;
+    --dc5: #9DBAB0;
+}
+
+.light {
+    --bg: var(--lc1);
+    --text: var(--colorA);
+    --cd: var(--lc5);
+}
+
+.dark {
+    --bg: var(--dc1);
+    --text: var(--colorB);
+    --cd: var(--dc5);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.card {
+    background: var(--cd);
+    padding: 10px;
+}
+
+.title {
+    
+}
