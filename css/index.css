@@ -54,7 +54,7 @@ body {
 
 a {
     text-decoration: none;
-    color: currentColor;
+    color: var(--text);
 }
 
 .card {
