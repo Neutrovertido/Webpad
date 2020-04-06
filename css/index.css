@@ -2,12 +2,12 @@
     --colorA: #000000;
     --colorB: #ffffff;
 
-    --lc1: #DEFFF3;
+    --lc1: #defff3;
     --lc2: #59907d;
-    --lc3: #A0DEA4;
-    --lc4: #8FBDAE;
-    --lc5: #4F7765;
-    
+    --lc3: #a0dea4;
+    --lc4: #8fbdae;
+    --lc5: #4f7765;
+
     --dc1: #424242;
     --dc2: #666565;
     --dc3: #616161;
@@ -33,7 +33,8 @@
     --hov: var(--dc2);
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -53,7 +54,7 @@ body {
 
 a {
     text-decoration: none;
-    color: currentColor;
+    color: var(--text);
 }
 
 .card {
@@ -87,7 +88,8 @@ a {
     box-sizing: border-box;
 }
 
-.navitem:hover {
+.navitem:hover,
+.box button:hover {
     background-color: var(--hov);
     transition: 250ms ease-in-out;
 }
@@ -112,10 +114,20 @@ main form {
     height: 100%;
 }
 
-.box textarea{
+.box textarea {
     resize: none;
     flex: 1;
     font-size: 150%;
+}
+
+.box button {
+    background: var(--nav);
+    font-size: 2rem;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    color: var(--text);
 }
 
 @media screen and (max-width: 1100px) {

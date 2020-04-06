@@ -10,9 +10,9 @@ Made entirely in:
 📝 It was developed from scratch in its totallity 📝
 
 #### 📌 TODO list:
-* Make it work 🔮
+* Make it work 🔮 (🕓 Work in progress)
 * Deploy to GitHub pages 📲
-* Add save option 💾
-* Add toggleable-dark theme 🌗
+* Add save option 💾 (🕓 Work in progress)
+* Add toggleable-dark theme 🌗 (🕓 Work in progress)
 * Support for custom fonts 🔠
 * Deploy to multiple desktops via Electron 📦
