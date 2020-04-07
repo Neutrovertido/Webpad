@@ -1,6 +1,7 @@
 ## 📑Webpad
 
 🔎An open-source and simple featured Notepad-like web application.  
+[Check it out here](https://neutrovertido.github.io/Webpad/)
 
 Made entirely in:
 1. __HTML__ 📄
@@ -16,3 +17,4 @@ Made entirely in:
 * Add toggleable dark theme 🌗 (🕓 Work in progress)
 * Support for custom fonts 🔠
 * Deploy to multiple desktops via Electron 📦
+* Support for various languages 🗺
