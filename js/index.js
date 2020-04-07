@@ -2,7 +2,7 @@
 const ab = document.getElementById("about");
 
 ab.onclick = () => {
-    alert("Webpad b0.1\nMade by Neutrovertido - 2020");
+    alert("Webpad Beta 1.0\nMade by Neutrovertido - 2020");
 }
 
 // Theme function

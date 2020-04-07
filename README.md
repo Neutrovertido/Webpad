@@ -12,7 +12,7 @@ Made entirely in:
 #### 📌 TODO list:
 * Make it work 🔮 (🕓 Work in progress)
 * Deploy to GitHub pages 📲
-* Add save option 💾 (🕓 Work in progress)
+* Add save option 💾 (🎯 Done!)
 * Add toggleable-dark theme 🌗 (🕓 Work in progress)
 * Support for custom fonts 🔠
 * Deploy to multiple desktops via Electron 📦
