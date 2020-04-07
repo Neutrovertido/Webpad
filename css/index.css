@@ -120,6 +120,10 @@ main form {
     font-size: 150%;
 }
 
+.box input[type="text"] {
+    margin-bottom: 10px;
+}
+
 .box button {
     background: var(--nav);
     font-size: 2rem;

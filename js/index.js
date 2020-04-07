@@ -2,7 +2,7 @@
 const ab = document.getElementById("about");
 
 ab.onclick = () => {
-    alert("Webpad b0.1\nMade by Neutrovertido - 2020");
+    alert("Webpad Beta 1.0\nMade by Neutrovertido - 2020");
 }
 
 // Theme function
@@ -29,5 +29,17 @@ th.onclick = () => {
 const sb = document.getElementById("ward");
 
 sb.onclick = () => {
-    alert("Someday it will eventualy work");
+    var userInput = document.getElementById("tbox").value;
+    var fileName = document.getElementById("name").value;
+    
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(userInput));
+    element.setAttribute('download', fileName);
+
+    element.style.display = 'none';
+    body.appendChild(element);
+
+    element.click();
+
+    body.removeChild(element);
 }
